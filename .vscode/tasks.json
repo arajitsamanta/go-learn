@@ -6,7 +6,7 @@
         {
             "label": "install-gotour",
             "type": "shell",
-            "command": "go install ./basic",
+            "command": "go install ./basic ./flowcontrol",
             "group": {
                 "kind": "build",
                 "isDefault": true

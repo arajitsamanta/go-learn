@@ -16,5 +16,5 @@ import (
 
 //TestImport function
 func TestImport() {
-	fmt.Printf("****Running gotour1.TestImport(), Now you have %g problems.", math.Sqrt(7))
+	fmt.Printf("****Running basic.TestImport(), Now you have %g problems.", math.Sqrt(7))
 }

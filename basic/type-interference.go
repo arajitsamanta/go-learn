@@ -18,7 +18,7 @@ Try changing the initial value of v in the example code and observe how its type
 
 */
 func TypeInterference() {
-	fmt.Print("****Running gotour1.TypeInterference(), automatic type detection --> ")
+	fmt.Print("****Running basic.TypeInterference(), automatic type detection --> ")
 	v := 42.54 // change me!
-	fmt.Printf("v is of type %T\n", v)
+	fmt.Printf("v is of type %T", v)
 }

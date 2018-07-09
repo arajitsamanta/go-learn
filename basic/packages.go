@@ -19,5 +19,5 @@ import (
 
 //TestPackages function
 func TestPackages() {
-	fmt.Println("\n****Running gotour1.TestPackages(), My favourite no is", rand.Intn(10))
+	fmt.Println("\n****Running basic.TestPackages(), My favourite no is", rand.Intn(10))
 }

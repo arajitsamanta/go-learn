@@ -3,10 +3,11 @@ package main
 import (
 	"fmt"
 	"go-learn/basic"
+	"go-learn/flowcontrol"
 )
 
 func main() {
-	fmt.Printf("============== START - Running gotour chapter 1 codes =============\n")
+	fmt.Printf("============== START - Running gotour Basic codes =============\n")
 	basic.TestPackages()
 	basic.TestImport()
 	basic.Add(2, 5)
@@ -20,5 +21,11 @@ func main() {
 	basic.ZeroValueVariable()
 	basic.ConvertTypes()
 	basic.TypeInterference()
-	fmt.Printf("\n\n=============== END =============\n")
+	basic.Constants()
+	basic.NumericConstant()
+	fmt.Printf("\n=============== END - Basic =============\n")
+
+	fmt.Printf("\n============== START - Running gotour FlowControl codes =============\n")
+	flowcontrol.SimpleForLoop()
+	fmt.Printf("\n\n=============== END - FlowControl =============\n")
 }

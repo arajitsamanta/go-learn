@@ -21,7 +21,7 @@ Unlike in C, in Go assignment between items of different type requires an explic
 in the example and see what happens.
 */
 func ConvertTypes() {
-	fmt.Print("****Running gotour1.ConvertTypes(), type conversions --> ")
+	fmt.Print("****Running basic.ConvertTypes(), type conversions --> ")
 	var x, y int = 3, 4
 	var f = math.Sqrt(float64(x*x + y*y))
 	var z = uint(f)

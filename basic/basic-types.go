@@ -28,7 +28,7 @@ var (
 
 //DataTypes - Example of Go's basi data types.
 func DataTypes() {
-	fmt.Print("****Running gotour1.BasicTypes(), Go's basic data types example")
+	fmt.Print("****Running basic.BasicTypes(), Go's basic data types example")
 	fmt.Printf("\nType: %T Value: %v\n", ToBe, ToBe)
 	fmt.Printf("Type: %T Value: %v\n", MaxInt, MaxInt)
 	fmt.Printf("Type: %T Value: %v\n", z, z)

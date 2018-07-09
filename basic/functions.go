@@ -14,7 +14,7 @@ import "fmt"
 //Add - custom function to add two integers
 func Add(x int, y int) int {
 	sum := x + y
-	fmt.Printf("\n****Running gotour1.Add(), sum = %d", sum)
+	fmt.Printf("\n****Running basic.Add(), sum = %d", sum)
 	return sum
 }
 
@@ -28,12 +28,12 @@ to
 */
 func AddOmitTypeDeclaration(x, y int) int {
 	var sum = x + y
-	fmt.Printf("\n****Running gotour1.AddOmitTypeDeclaration(), sum = %d", sum)
+	fmt.Printf("\n****Running basic.AddOmitTypeDeclaration(), sum = %d", sum)
 	return sum
 }
 
 //Swap - multiple returns
 func Swap(x, y string) (string, string) {
-	fmt.Printf("\n****Running gotour1.Swap(), multiple returns")
+	fmt.Printf("\n****Running basic.Swap(), multiple returns")
 	return y, x
 }
