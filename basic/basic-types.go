@@ -1,4 +1,4 @@
-package gotour1
+package basic
 
 import (
 	"fmt"
@@ -26,8 +26,8 @@ var (
 	z             = cmplx.Sqrt(-5 + 12i)
 )
 
-//BasicTypes - Example of Go's basi data types.
-func BasicTypes() {
+//DataTypes - Example of Go's basi data types.
+func DataTypes() {
 	fmt.Print("****Running gotour1.BasicTypes(), Go's basic data types example")
 	fmt.Printf("\nType: %T Value: %v\n", ToBe, ToBe)
 	fmt.Printf("Type: %T Value: %v\n", MaxInt, MaxInt)

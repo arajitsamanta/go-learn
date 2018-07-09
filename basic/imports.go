@@ -1,4 +1,4 @@
-package gotour1
+package basic
 
 /*
 This code groups the imports into a parenthesized, "factored" import statement.

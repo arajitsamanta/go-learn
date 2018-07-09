@@ -1,4 +1,4 @@
-package gotour1
+package basic
 
 /*
 Every Go program is made up of packages.

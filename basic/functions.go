@@ -1,4 +1,4 @@
-package gotour1
+package basic
 
 /*
 A function can take zero or more arguments.

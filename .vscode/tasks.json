@@ -6,7 +6,7 @@
         {
             "label": "install-gotour",
             "type": "shell",
-            "command": "go install ./gotour1",
+            "command": "go install ./basic",
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -16,7 +16,7 @@
         {
             "label": "run-gotour",
             "type": "shell",
-            "command": "go run ./gotour1-main/gotour-main.go",
+            "command": "go run ./gotour-main/gotour-main.go",
             "group": {
                 "kind": "build",
                 "isDefault": true
