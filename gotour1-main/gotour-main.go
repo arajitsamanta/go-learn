@@ -18,5 +18,7 @@ func main() {
 	gotour1.ShortVaribaleDeclaration()
 	gotour1.BasicTypes()
 	gotour1.ZeroValueVariable()
+	gotour1.ConvertTypes()
+	gotour1.TypeInterference()
 	fmt.Printf("\n\n=============== END =============\n")
 }
