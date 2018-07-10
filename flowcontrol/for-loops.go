@@ -22,3 +22,20 @@ func SimpleForLoop() {
 	}
 	fmt.Println(sum)
 }
+
+//ForOptionalInitAndPost - Go for loop with out init and post statement
+func ForOptionalInitAndPost() {
+	fmt.Printf("\n****Running flowcontrol.ForOptionalInitAndPost(), go for loop with out init and post statement example ")
+	sum := 1
+	for sum < 1000 {
+		sum = sum + sum
+	}
+	fmt.Println(sum)
+}
+
+//ForeverLoop -  If you omit the loop condition it loops forever, so an infinite loop is compactly expressed
+func ForeverLoop() {
+	fmt.Printf("\n****Running flowcontrol.ForForever(), go infinte for loop")
+	for {
+	}
+}
