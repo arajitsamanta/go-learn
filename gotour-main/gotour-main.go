@@ -37,7 +37,9 @@ func main() {
 	//flowcontrol.SqrtMatching(1)
 	flowcontrol.SqrtMatching(25000)
 	fmt.Println("actual sqrt", math.Sqrt(25000))
-	//flowcontrol.SqrtMatching(3)
-
+	flowcontrol.SwitchExample()
+	flowcontrol.SwitchInOrder()
+	flowcontrol.SwitchNoCondition()
+	flowcontrol.DeferExample()
 	fmt.Printf("\n\n=============== END - FlowControl =============\n")
 }
