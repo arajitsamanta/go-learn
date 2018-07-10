@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"go-learn/basic"
 	"go-learn/flowcontrol"
+	"go-learn/types"
 	"math"
 )
 
@@ -42,4 +43,9 @@ func main() {
 	flowcontrol.SwitchNoCondition()
 	flowcontrol.DeferExample()
 	fmt.Printf("\n\n=============== END - FlowControl =============\n")
+
+	fmt.Printf("\n============== START - Running gotour Types(structs, slice, maps, pointers etc) codes =============\n")
+	types.HelloPointers()
+	fmt.Printf("\n\n=============== END - Types =============\n")
+
 }
