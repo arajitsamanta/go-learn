@@ -16,13 +16,12 @@ The * operator denotes the pointer's underlying value.
 
 fmt.Println(*p) // read i through the pointer p
 *p = 21         // set i through the pointer p
-This is known as "dereferencing" or "indirecting"
-.
-Unlike C, Go has no pointer arithmetic.
+This is known as "dereferencing" or "indirecting".
 
+Unlike C, Go has no pointer arithmetic.
 */
 func HelloPointers() {
-	fmt.Printf("\n****Running types.HelloPointers(), go pointers")
+	fmt.Printf("\n****Running types.HelloPointers(), go pointers \n")
 	i, j := 42, 2701
 
 	p := &i         // point to i

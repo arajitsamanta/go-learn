@@ -46,6 +46,19 @@ func main() {
 
 	fmt.Printf("\n============== START - Running gotour Types(structs, slice, maps, pointers etc) codes =============\n")
 	types.HelloPointers()
+	types.HelloStructures()
+	types.StructureFieldAccess()
+	types.StructureFieldAccessUsingPointers()
+	types.StructLiterals()
+	types.HelloArrays()
+	types.HelloSlices()
+	types.SlicePointers()
+	types.SliceLiterals()
+	types.SliceDefaults()
+	types.SliceLengthAndCapacity()
+	types.NilSlices()
+	types.SliceWithMake()
+	types.SlicesOfSlice()
 	fmt.Printf("\n\n=============== END - Types =============\n")
 
 }
