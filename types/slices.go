@@ -211,3 +211,60 @@ func SlicesOfSlice() {
 		fmt.Printf("%s\n", strings.Join(board[i], " "))
 	}
 }
+
+/*
+SliceAppend - Appending to a slice
+
+It is common to append new elements to a slice, and so Go provides a built-in append function. The https://golang.org/pkg/builtin/#append of the built-in package
+describes append.
+func append(s []T, vs ...T) []T
+
+The first parameter s of append is a slice of type T, and the rest are T values to append to the slice.
+The resulting value of append is a slice containing all the elements of the original slice plus the provided values.
+
+If the backing array of s is too small to fit all the given values a bigger array will be allocated. The returned slice will point to the newly allocated array.
+(To learn more about slices, read the https://blog.golang.org/go-slices-usage-and-internals)
+*/
+func SliceAppend() {
+	fmt.Printf("****Running types.SliceAppend(), appending to slice using built-in append() \n")
+	var s []int
+	printSlice(s)
+
+	// append works on nil slices.
+	s = append(s, 0)
+	printSlice(s)
+
+	// The slice grows as needed.
+	s = append(s, 1)
+	printSlice(s)
+
+	// We can add more than one element at a time.
+	s = append(s, 2, 3, 4)
+	printSlice(s)
+}
+
+/*
+RangeOverSlice - The range form of the for loop iterates over a slice or map.
+When ranging over a slice, two values are returned for each iteration. The first is the index, and the second is a copy of the element at that index.
+*/
+func RangeOverSlice() {
+
+	fmt.Printf("****Running types.RangeOverSlice(), using range over slice \n")
+	var pow = []int{1, 2, 4, 8, 16, 32, 64, 128}
+
+	for i, v := range pow {
+		fmt.Printf("2**%d = %d\n", i, v)
+	}
+
+	//You can skip the index or value by assigning to _.
+	//If you only want the index, drop the ", value" entirely.
+	var pow2 = make([]int, 10)
+	for i := range pow2 {
+		pow2[i] = 1 << uint(i) // == 2**i
+	}
+
+	for _, value := range pow2 {
+		fmt.Printf("%d\n", value)
+	}
+
+}

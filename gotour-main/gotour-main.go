@@ -59,6 +59,9 @@ func main() {
 	types.NilSlices()
 	types.SliceWithMake()
 	types.SlicesOfSlice()
+	types.SliceAppend()
+	types.RangeOverSlice()
+	types.SliceExcercise()
 	fmt.Printf("\n\n=============== END - Types =============\n")
 
 }
