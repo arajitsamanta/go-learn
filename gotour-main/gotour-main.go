@@ -45,11 +45,16 @@ func main() {
 	fmt.Printf("\n\n=============== END - FlowControl =============\n")
 
 	fmt.Printf("\n============== START - Running gotour Types(structs, slice, maps, pointers etc) codes =============\n")
+	//Pointers
 	types.HelloPointers()
+
+	//Structures
 	types.HelloStructures()
 	types.StructureFieldAccess()
 	types.StructureFieldAccessUsingPointers()
 	types.StructLiterals()
+
+	//Arrays and Slices
 	types.HelloArrays()
 	types.HelloSlices()
 	types.SlicePointers()
@@ -62,6 +67,11 @@ func main() {
 	types.SliceAppend()
 	types.RangeOverSlice()
 	types.SliceExcercise()
+
+	//Maps
+	types.HelloMaps()
+	types.MapLiterals()
+	types.MapLiteralsWithNoTypeName()
 	fmt.Printf("\n\n=============== END - Types =============\n")
 
 }
