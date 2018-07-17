@@ -72,6 +72,13 @@ func main() {
 	types.HelloMaps()
 	types.MapLiterals()
 	types.MapLiteralsWithNoTypeName()
+	types.MapMutation()
+	types.MapExcercise()
+
+	//Function as values
+	types.FunctionAsValues()
+	types.FunctionClosures()
+	types.FibonacciWithFunctionClosure()
 	fmt.Printf("\n\n=============== END - Types =============\n")
 
 }
