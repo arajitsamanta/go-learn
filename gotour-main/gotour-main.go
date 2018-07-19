@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"go-learn/basic"
 	"go-learn/flowcontrol"
+	"go-learn/method"
 	"go-learn/types"
 	"math"
 )
@@ -79,6 +80,12 @@ func main() {
 	types.FunctionAsValues()
 	types.FunctionClosures()
 	types.FibonacciWithFunctionClosure()
+
+	//Go methods
+	method.HelloGoMethods()
+	method.GoMethodsAreFunctions()
+	method.MethodsOnNonStructTypes()
+	method.MethodsWithPointerReceiver()
 	fmt.Printf("\n\n=============== END - Types =============\n")
 
 }
