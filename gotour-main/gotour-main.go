@@ -86,6 +86,9 @@ func main() {
 	method.GoMethodsAreFunctions()
 	method.MethodsOnNonStructTypes()
 	method.MethodsWithPointerReceiver()
+	method.MethodsWithPointerReceiver2()
+	method.MethodsAndPointerIndirection()
+	method.MethodsAndPointerIndirection2()
 	fmt.Printf("\n\n=============== END - Types =============\n")
 
 }
