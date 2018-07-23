@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"go-learn/basic"
 	"go-learn/flowcontrol"
+	"go-learn/interfaces"
 	"go-learn/method"
 	"go-learn/types"
 	"math"
@@ -81,6 +82,9 @@ func main() {
 	types.FunctionClosures()
 	types.FibonacciWithFunctionClosure()
 
+	fmt.Printf("\n\n=============== END - Types =============\n")
+
+	fmt.Printf("\n============== START - Running gotour methods and interfaces codes =============\n")
 	//Go methods
 	method.HelloGoMethods()
 	method.GoMethodsAreFunctions()
@@ -89,6 +93,15 @@ func main() {
 	method.MethodsWithPointerReceiver2()
 	method.MethodsAndPointerIndirection()
 	method.MethodsAndPointerIndirection2()
-	fmt.Printf("\n\n=============== END - Types =============\n")
+	method.MethodsWithValueOrPointerReceiver()
+
+	//Go interfacs
+	interfaces.HelloInterfaces()
+	interfaces.ImplicitInterfaceImplementations()
+	interfaces.InterfaceValues()
+	interfaces.InterfaceWithNilValues()
+	//interfaces.NilInterfaceValues() - No interface implementation. Go does not know which mehtod to call
+	interfaces.EmptyInterfaces()
+	fmt.Printf("\n\n=============== END - Methods & Interfaces =============\n")
 
 }

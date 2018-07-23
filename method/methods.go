@@ -199,3 +199,31 @@ func MethodsAndPointerIndirection2() {
 	fmt.Println(absFunc(*p))
 
 }
+
+func (v *vertex3) scale1(f float64) {
+	v.X = v.X * f
+	v.Y = v.Y * f
+}
+
+func (v *vertex3) abs1() float64 {
+	return math.Sqrt(v.X*v.X + v.Y*v.Y)
+}
+
+/*
+MethodsWithValueOrPointerReceiver - There are two reasons to use a pointer receiver.
+
+The first is so that the method can modify the value that its receiver points to.
+
+The second is to avoid copying the value on each method call. This can be more efficient if the receiver is a large struct, for example.
+
+In this example, both Scale and Abs are with receiver type *Vertex, even though the Abs method needn't modify its receiver.
+
+In general, all methods on a given type should have either value or pointer receivers, but not a mixture of both. (We'll see why over the next few pages.)
+*/
+func MethodsWithValueOrPointerReceiver() {
+	fmt.Printf("****Running methods.MethodsWithValueOrPointerReceiver(), chhose between value or pointer receiver \n")
+	v := &vertex3{3, 4}
+	fmt.Printf("Before scaling: %+v, Abs: %v\n", v, v.abs1())
+	v.scale1(5)
+	fmt.Printf("After scaling: %+v, Abs: %v\n", v, v.abs1())
+}
