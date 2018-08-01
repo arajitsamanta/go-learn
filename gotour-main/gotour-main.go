@@ -102,6 +102,17 @@ func main() {
 	interfaces.InterfaceWithNilValues()
 	//interfaces.NilInterfaceValues() - No interface implementation. Go does not know which mehtod to call
 	interfaces.EmptyInterfaces()
+	interfaces.TypeAssertions()
+	interfaces.TypeSwitch()
+	interfaces.HelloStringers()
+	interfaces.StringersExcercise()
+	interfaces.GoErrors()
+	interfaces.ErrorsExcercise()
+	interfaces.GoReaders()
+	interfaces.ReaderExcercise()
+	interfaces.ROT13Reader()
+	interfaces.GoImages()
+	interfaces.ImageExcercise()
 	fmt.Printf("\n\n=============== END - Methods & Interfaces =============\n")
 
 }
