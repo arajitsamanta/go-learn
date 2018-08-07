@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"go-learn/basic"
+	"go-learn/concurrency"
 	"go-learn/flowcontrol"
 	"go-learn/interfaces"
 	"go-learn/method"
@@ -114,5 +115,13 @@ func main() {
 	interfaces.GoImages()
 	interfaces.ImageExcercise()
 	fmt.Printf("\n\n=============== END - Methods & Interfaces =============\n")
+
+	fmt.Printf("\n============== START - Running Go concurrency codes =============\n")
+	concurrency.GoRoutines()
+	concurrency.GoChannels()
+	concurrency.BufferedChannel()
+	concurrency.RangeAndClose()
+	concurrency.GoSelect()
+	fmt.Printf("\n\n==========)===== END -  Go concurrency=============\n")
 
 }
