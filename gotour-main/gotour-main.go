@@ -122,6 +122,10 @@ func main() {
 	concurrency.BufferedChannel()
 	concurrency.RangeAndClose()
 	concurrency.GoSelect()
+	concurrency.DefaultSelect()
+	concurrency.EquivalentBinaryTree()
+	concurrency.MutexExample()
+	concurrency.WebCrawler()
 	fmt.Printf("\n\n==========)===== END -  Go concurrency=============\n")
 
 }

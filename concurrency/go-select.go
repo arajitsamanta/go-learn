@@ -1,6 +1,9 @@
 package concurrency
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func fibonacci2(c, quit chan int) {
 	x, y := 0, 1
@@ -31,4 +34,27 @@ func GoSelect() {
 		quit <- 0
 	}()
 	fibonacci2(c, quit)
+}
+
+/*
+DefaultSelect - The default case in a select is run if no other case is ready.
+
+Use a default case to try a send or receive without blocking:
+*/
+func DefaultSelect() {
+	fmt.Print("****Running concurrency.DefaultSelect(), Go default select statement \n")
+	tick := time.Tick(100 * time.Millisecond)
+	boom := time.After(500 * time.Millisecond)
+	for {
+		select {
+		case <-tick:
+			fmt.Println("tick.")
+		case <-boom:
+			fmt.Println("BOOM!")
+			return
+		default:
+			fmt.Println("    .")
+			time.Sleep(50 * time.Millisecond)
+		}
+	}
 }

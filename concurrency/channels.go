@@ -29,7 +29,7 @@ The example code sums the numbers in a slice, distributing the work between two 
 the final result.
 */
 func GoChannels() {
-	fmt.Print("\n****Running concurrency.GoChannels(), Go channels")
+	fmt.Print("\n****Running concurrency.GoChannels(), Go channels ")
 	s := []int{7, 2, 8, -9, 4, 0}
 
 	c := make(chan int)
