@@ -44,6 +44,16 @@ func Same(t1, t2 *tree.Tree) bool {
 	return false
 }
 
+func preorderTraversal(root *tree.Tree) []int {
+	var temp []int
+	ch := make(chan int)
+	go Walk(root, ch)
+	for elem := range ch {
+		temp = append(temp, elem)
+	}
+	return temp
+}
+
 /*
 EquivalentBinaryTree -
 
